@@ -13,5 +13,8 @@ def get_median_font_size(font_sizes):
 
     return sorted_list[(list_length // 2) -1]
 
+#BOOT-DEV SOLUTION
 def get_median_font_size_2(font_sizes):
-    pass
+    if len(font_sizes) == 0:
+        return None
+    return sorted(font_sizes)[(len(font_sizes) - 1) // 2]
